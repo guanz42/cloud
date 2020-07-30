@@ -20,6 +20,7 @@
         <module>user-service01</module>
         <module>user-service02</module>
         <module>service-consumer</module>
+        <module>config-nacos</module>
     </modules>
 
     <dependencyManagement>

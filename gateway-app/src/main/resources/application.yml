@@ -3,7 +3,14 @@ server:
 
 spring:
   cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: user-router1
           uri:  http://localhost:8300
@@ -14,3 +21,8 @@ spring:
           uri:  http://localhost:8300
           predicates:
             - Path=/consumer/feign/user/**
+
+        - id: user-service
+          uri:  lb://nacos-user-provider
+          predicates:
+            - Path=/api/user/**

@@ -21,6 +21,7 @@
         <module>user-service02</module>
         <module>service-consumer</module>
         <module>config-nacos</module>
+        <module>sentinel-service</module>
     </modules>
 
     <dependencyManagement>

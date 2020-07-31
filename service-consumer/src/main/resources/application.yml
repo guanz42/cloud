@@ -11,3 +11,7 @@ spring:
 
 service-url:
   nacos-user: http://nacos-user-provider
+
+logging:
+  level:
+    com.consumer.service.UserFeignService: debug

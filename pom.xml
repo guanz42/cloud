@@ -22,6 +22,7 @@
         <module>service-consumer</module>
         <module>config-nacos</module>
         <module>sentinel-service</module>
+        <module>gateway-app</module>
     </modules>
 
     <dependencyManagement>
